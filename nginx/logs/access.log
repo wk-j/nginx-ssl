@@ -1,0 +1,4 @@
+172.18.0.1 - - [15/Jul/2019:13:14:49 +0000] "GET / HTTP/1.1" 404 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0"
+172.18.0.1 - - [15/Jul/2019:13:14:49 +0000] "GET /favicon.ico HTTP/1.1" 404 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0"
+172.18.0.1 - - [15/Jul/2019:13:14:54 +0000] "GET /api/values HTTP/1.1" 200 30 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0"
+172.18.0.1 - - [15/Jul/2019:13:15:15 +0000] "GET / HTTP/1.1" 200 30 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0"
