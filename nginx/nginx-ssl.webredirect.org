@@ -1,0 +1,1 @@
+server_name nginx-ssl.webredirect.org www.nginx-ssl.webredirect.org

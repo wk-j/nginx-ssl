@@ -1,7 +1,7 @@
 FROM microsoft/dotnet:2.2-sdk
 WORKDIR /app
 
-COPY publish /app
+COPY .publish /app
 
 RUN find /app
 
