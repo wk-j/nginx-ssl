@@ -7,7 +7,7 @@ var project = $"src/{name}/{name}.csproj";
 
 Task("Publish").Does(() => {
     DotNetCorePublish(project, new DotNetCorePublishSettings {
-        OutputDirectory = "src/.publish"
+        OutputDirectory = ".publish"
     });
 });
 
