@@ -2,10 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MyWeb.Controllers
 {
-    [Route("/.well-known/acme-challenge/aAbtlRGnVqhMvafpTwf5kcoR0gsbnuam-6A7BpAedcA")]
+    [Route("/.well-known/acme-challenge/BM8IOYUn4P0iSe5csNPl2npacT9zTtXUJhb3BF820rA")]
     public class WNController
     {
         public string Get() =>
-            "aAbtlRGnVqhMvafpTwf5kcoR0gsbnuam-6A7BpAedcA.c5KlemD5s8BxXA4JIGAc41hDAwwGCYHT_yGueoTRqMo";
+            "BM8IOYUn4P0iSe5csNPl2npacT9zTtXUJhb3BF820rA.c5KlemD5s8BxXA4JIGAc41hDAwwGCYHT_yGueoTRqMo";
     }
 }
