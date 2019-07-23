@@ -2,17 +2,27 @@
 
 using PS = StartProcess.Processor;
 
-var name = "MyWeb";
-var project = $"src/{name}/{name}.csproj";
 
-Task("Publish").Does(() => {
+Task("Publish-Web").Does(() => {
+    var name = "MyWeb";
+    var project = $"src/{name}/{name}.csproj";
     DotNetCorePublish(project, new DotNetCorePublishSettings {
-        OutputDirectory = ".publish"
+        OutputDirectory = ".publish/MyWeb"
+    });
+});
+
+Task("Publish-Web2").Does(() => {
+    var name = "MyWeb2";
+    var project = $"src/{name}/{name}.csproj";
+
+    DotNetCorePublish(project, new DotNetCorePublishSettings {
+        OutputDirectory = ".publish/MyWeb2"
     });
 });
 
 Task("Start-Docker")
-    .IsDependentOn("Publish")
+    .IsDependentOn("Publish-Web")
+    .IsDependentOn("Publish-Web2")
     .Does(() => {
 
         PS.StartProcess("docker-compose down");

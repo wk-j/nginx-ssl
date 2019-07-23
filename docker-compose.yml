@@ -13,9 +13,17 @@ services:
         - "443:443"
         - "88:88"
 
-  app:
+  web:
     build:
       context: "./"
-      dockerfile: Dockerfile
+      dockerfile: MyWeb.Dockerfile
     volumes:
-      - "./logs/app:/app/logs"
+      - "./logs/web:/app/logs"
+
+  web2:
+    build:
+      context: "./"
+      dockerfile: MyWeb2.Dockerfile
+    volumes:
+      - "./logs/web2:/app/logs"
+
